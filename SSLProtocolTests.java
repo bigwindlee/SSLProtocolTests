@@ -4,7 +4,8 @@ import javax.net.ssl.*;
 
 public class SSLProtocolTests {
     public static void main(String[] args) throws Exception {
-        System.out.println("java.version=" + System.getProperty("java.version"));
+        Properties p = System.getProperties();
+        p.list(System.out);
         
         System.out.println("\nPrint SSL info of the default :");
         printSSL(SSLContext.getDefault());
